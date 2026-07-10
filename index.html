@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Karina Martins • Oficial • Hotwife 42</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* ===== RESET E BASE ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0b0b0b;
+      background-image: 
+        radial-gradient(ellipse at 20% 50%, #1f1a0e 0%, #000000 80%),
+        repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.02) 0px, rgba(212, 175, 55, 0.02) 2px, transparent 2px, transparent 8px);
+      padding: 20px;
+    }
+
+    /* ===== CONTAINER PRINCIPAL (Efeito Vidro) ===== */
+    .container {
+      max-width: 420px;
+      width: 100%;
+      background: rgba(18, 18, 20, 0.75);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-radius: 56px 56px 40px 40px;
+      padding: 34px 26px 40px;
+      border: 1px solid rgba(212, 175, 55, 0.20);
+      box-shadow: 
+        0 30px 80px rgba(0, 0, 0, 0.9),
+        0 0 60px rgba(212, 175, 55, 0.06),
+        inset 0 0 60px rgba(212, 175, 55, 0.02);
+      position: relative;
+      overflow: hidden;
+      transition: 0.4s ease;
+    }
+
+    /* Brilho sutil no topo */
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 30% 10%, rgba(212, 175, 55, 0.04), transparent 70%);
+      pointer-events: none;
+    }
+
+    /* ===== FOTO DE PERFIL COM MOLDUURA GIRATÓRIA ===== */
+    .profile-wrapper {
+      position: relative;
+      width: 148px;
+      height: 148px;
+      margin: 0 auto 18px;
+    }
+
+    /* Anel dourado que gira */
+    .profile-ring {
+      position: absolute;
+      inset: -5px;
+      border-radius: 50%;
+      background: conic-gradient(from 0deg, #d4af37, #f9e076, #d4af37, #b8860b, #d4af37, #f9e076, #d4af37);
+      padding: 4px;
+      animation: spinRing 0s linear infinite;
+      box-shadow: 0 0 40px rgba(212, 175, 55, 0.25);
+    }
+
+    @keyframes spinRing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .profile-ring-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #0a0a0a;
+      overflow: hidden;
+      border: 3px solid #0b0b0b;
+      position: relative;
+    }
+
+    .profile-ring-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+      transition: transform 0.5s ease;
+    }
+
+    .profile-ring-inner:hover img {
+      transform: scale(1.04);
+    }
+
+    /* Fallback com iniciais */
+    .profile-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(145deg, #1a1814, #2a251a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 54px;
+      font-weight: 300;
+      color: #d4af37;
+      letter-spacing: 3px;
+      border-radius: 50%;
+    }
+
+    /* ===== NOME + SELO VERIFICADO ANIMADO ===== */
+    .name-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+    }
+
+    .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #0095f6;
+      color: #fff;
+      font-size: 17px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 149, 246, 0.5);
+      border: 2px solid #0a0a0a;
+      animation: pulseBadge 2.5s ease-in-out infinite;
+    }
+
+    @keyframes pulseBadge {
+      0% { box-shadow: 0 0 10px rgba(0, 149, 246, 0.3); }
+      50% { box-shadow: 0 0 35px rgba(0, 149, 246, 0.8); }
+      100% { box-shadow: 0 0 10px rgba(0, 149, 246, 0.3); }
+    }
+
+    .verified-badge i {
+      font-size: 17px;
+      filter: drop-shadow(0 0 6px rgba(255,255,255,0.2));
+    }
+
+    /* ===== SUBTÍTULO CENTRALIZADO ===== */
+    .subtitle {
+      font-size: 17px;
+      font-weight: 400;
+      color: #d4af37;
+      letter-spacing: 3px;
+      margin-top: 4px;
+      text-transform: uppercase;
+      opacity: 0.95;
+      text-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+      text-align: center; /* <-- CENTRALIZADO */
+      width: 100%;
+      display: block;
+    }
+
+    .subtitle span {
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    .divider {
+      width: 75px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #d4af37, transparent);
+      margin: 16px auto 14px;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+    }
+
+    /* ===== BIO PERSUASIVA (COM GATILHOS) ===== */
+    .bio {
+      color: #bfbfbf;
+      font-size: 15.5px;
+      line-height: 1.7;
+      margin: 4px 0 12px;
+      padding: 0 4px;
+      font-weight: 300;
+      text-align: center; /* <-- CENTRALIZADO PARA COMBINAR */
+    }
+
+    .bio .destacar {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .bio .ouro {
+      color: #d4af37;
+      font-weight: 500;
+    }
+
+    .bio .linha-impacto {
+      display: block;
+      margin-top: 6px;
+      font-size: 14px;
+      color: #aaa;
+      letter-spacing: 0.3px;
+    }
+
+    .bio .linha-impacto i {
+      color: #d4af37;
+      margin-right: 6px;
+    }
+
+    /* ===== BARRA DE URGÊNCIA / VAGAS ===== */
+    .urgency-bar {
+      background: rgba(212, 175, 55, 0.06);
+      border: 1px solid rgba(212, 175, 55, 0.12);
+      border-radius: 60px;
+      padding: 10px 18px;
+      margin: 18px 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .urgency-bar .label {
+      font-size: 13px;
+      color: #d4af37;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .urgency-bar .label i {
+      margin-right: 6px;
+      font-size: 14px;
+    }
+
+    .urgency-bar .vagas {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      background: rgba(212, 175, 55, 0.15);
+      padding: 4px 16px;
+      border-radius: 40px;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+    }
+
+    .urgency-bar .vagas span {
+      color: #d4af37;
+      font-weight: 800;
+    }
+
+    /* ===== BOTÃO VIP PULSANTE ===== */
+    .btn-vip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      width: 100%;
+      padding: 20px 12px;
+      margin: 12px 0 20px;
+      background: linear-gradient(135deg, #d4af37 0%, #b8860b 50%, #8b6914 100%);
+      background-size: 200% 200%;
+      border: none;
+      border-radius: 60px;
+      color: #0a0a0a;
+      font-size: 21px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      cursor: pointer;
+      box-shadow: 0 10px 40px rgba(212, 175, 55, 0.4);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      animation: pulseBtn 2.8s ease-in-out infinite;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @keyframes pulseBtn {
+      0% { box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3); transform: scale(1); }
+      50% { box-shadow: 0 15px 55px rgba(212, 175, 55, 0.6); transform: scale(1.02); }
+      100% { box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3); transform: scale(1); }
+    }
+
+    .btn-vip:hover {
+      animation: none;
+      transform: scale(1.03);
+      box-shadow: 0 15px 60px rgba(212, 175, 55, 0.7);
+      background: linear-gradient(135deg, #e8c84a, #c99f2e, #a77b1a);
+    }
+
+    .btn-vip:active {
+      transform: scale(0.96);
+    }
+
+    .btn-vip i {
+      font-size: 24px;
+      color: #1a1a1a;
+      filter: drop-shadow(0 0 6px rgba(0,0,0,0.2));
+    }
+
+    /* Brilho no botão */
+    .btn-vip::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), transparent 60%);
+      pointer-events: none;
+    }
+
+    /* ===== LINKS SECUNDÁRIOS ===== */
+    .links-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(4px);
+      padding: 15px 22px;
+      border-radius: 60px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      text-decoration: none;
+      color: #d0d0d0;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.25s ease;
+    }
+
+    .link-item:hover {
+      background: rgba(212, 175, 55, 0.06);
+      border-color: rgba(212, 175, 55, 0.20);
+      transform: translateX(6px);
+      color: #fff;
+    }
+
+    .link-item .left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .link-item .left i {
+      font-size: 20px;
+      width: 28px;
+      color: #d4af37;
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .link-item:hover .left i {
+      transform: scale(1.1);
+    }
+
+    .link-item .right {
+      color: #777;
+      font-size: 13px;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .link-item:hover .right {
+      color: #d4af37;
+    }
+
+    /* ===== RODAPÉ SOCIAL ===== */
+    .social-footer {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .social-footer a {
+      color: #555;
+      font-size: 28px;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .social-footer a:hover {
+      color: #d4af37;
+      transform: translateY(-4px);
+      text-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+    }
+
+    /* ===== FOOTER NOTE ===== */
+    .footer-note {
+      margin-top: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 11px;
+      color: #3a3a3a;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .footer-note a {
+      color: #4a4a4a;
+      text-decoration: none;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .footer-note a:hover {
+      color: #d4af37;
+    }
+
+    .footer-note .badge-18 {
+      background: rgba(212, 175, 55, 0.08);
+      padding: 4px 14px;
+      border-radius: 40px;
+      border: 1px solid rgba(212, 175, 55, 0.08);
+      color: #888;
+      font-size: 10px;
+    }
+
+    /* ===== RESPONSIVO ===== */
+    @media (max-width: 450px) {
+      .container {
+        padding: 28px 18px 32px;
+        border-radius: 40px;
+      }
+      .profile-wrapper {
+        width: 128px;
+        height: 128px;
+      }
+      .name {
+        font-size: 24px;
+      }
+      .subtitle {
+        font-size: 15px;
+        letter-spacing: 2px;
+      }
+      .btn-vip {
+        font-size: 18px;
+        padding: 18px 10px;
+        gap: 10px;
+      }
+      .btn-vip i {
+        font-size: 20px;
+      }
+      .link-item {
+        padding: 13px 16px;
+        font-size: 14px;
+      }
+      .urgency-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 12px 16px;
+      }
+      .social-footer {
+        gap: 20px;
+      }
+      .social-footer a {
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .container {
+        padding: 20px 12px 24px;
+      }
+      .profile-wrapper {
+        width: 110px;
+        height: 110px;
+      }
+      .name {
+        font-size: 20px;
+      }
+      .bio {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ===== FOTO DE PERFIL COM MOLDURA GIRATÓRIA ===== -->
+  <div class="profile-wrapper">
+    <div class="profile-ring">
+      <div class="profile-ring-inner">
+        <!-- SUBSTITUA O SRC PELA SUA FOTO -->
+        <img src="./img/karinapf2.jpeg" />
+        <!-- CASO QUEIRA USAR INICIAIS, DESCOMENTE ABAIXO E COMENTE A IMG ACIMA -->
+        <!-- <div class="profile-placeholder">KM</div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NOME + SELO VERIFICADO ANIMADO ===== -->
+  <div class="name-container">
+    <span class="name">Karina Martins</span>
+    <span class="verified-badge"><i class="fas fa-check-circle"></i></span>
+  </div>
+
+  <!-- ===== SUBTÍTULO CENTRALIZADO ===== -->
+  <div class="subtitle">
+    <span>CASADA</span> <span>•</span> <span>39 ANINHOS</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ===== BIO PERSUASIVA COM GATILHOS ===== -->
+  <div class="bio">
+    <span class="destacar">🔥 Casada Sofisticada</span> — dona do próprio prazer e da sua atenção.<br />
+    <span class="ouro">✦</span> Conteúdo <span class="destacar">PREMIUM</span> para cavalheiros que valorizam <span class="ouro">maturidade</span> e <span class="ouro">atitude</span>.<br />
+    
+    <span class="linha-impacto">
+      <i class="fas fa-crown"></i> Acesso restrito — apenas para <span class="destacar">verdadeiros apreciadores</span>.
+    </span>
+    <span class="linha-impacto">
+      <i class="fas fa-gem"></i> <span style="color:#fff;">+5.000</span> seguidores confiam na minha <span class="ouro">autenticidade</span>.
+    </span>
+  </div>
+
+  <!-- ===== BARRA DE URGÊNCIA (VAGAS LIMITADAS) ===== -->
+  <div class="urgency-bar">
+    <span class="label"><i class="fas fa-clock"></i> Vagas Promocionais</span>
+    <span class="vagas">Restam <span>4</span> / 20</span>
+  </div>
+
+  <!-- ===== BOTÃO PRINCIPAL VIP ===== -->
+  <a href="https://t.me/karinamartins_bot" class="btn-vip" target="_blank" rel="noopener">
+    <i class="fas fa-crown"></i> Acesso VIP <i class="fas fa-bolt"></i>
+  </a>
+
+  <!-- ===== FOOTER COM SELO +18 E PRIVACIDADE ===== -->
+  <div class="footer-note">
+    <a href="#"><i class="fas fa-shield-alt"></i> Privacidade</a>
+    <a href="#"><i class="fas fa-lock"></i> Seguro</a>
+  </div>
+
+</div>
+
+</body>
+</html>
