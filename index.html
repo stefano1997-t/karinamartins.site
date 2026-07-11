@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Karina Martins • Oficial </title>
+  <title>Karina Martins • Oficial • Hotwife</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     /* ===== RESET E BASE ===== */
@@ -62,7 +62,7 @@
       position: relative;
       width: 148px;
       height: 148px;
-      margin: 0 auto 18px;
+      margin: 0 auto 0;
     }
 
     /* Anel dourado que gira */
@@ -119,6 +119,47 @@
       border-radius: 50%;
     }
 
+    /* ===== STATUS ONLINE (BOLINHA VERDE PISCANDO) ===== */
+    .online-status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 14px;
+      margin-bottom: 4px;
+    }
+
+    .online-dot {
+      width: 14px;
+      height: 14px;
+      background: #22c55e;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+      animation: pulseDot 1.8s ease-in-out infinite;
+    }
+
+    @keyframes pulseDot {
+      0%, 100% { 
+        opacity: 1; 
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+      }
+      50% { 
+        opacity: 0.5; 
+        transform: scale(0.85);
+        box-shadow: 0 0 8px rgba(34, 197, 94, 0.2);
+      }
+    }
+
+    .online-text {
+      font-size: 17px;
+      font-weight: 600;
+      color: #86efac;
+      letter-spacing: 0.5px;
+      text-shadow: 0 0 30px rgba(34, 197, 94, 0.15);
+    }
+
     /* ===== NOME + SELO VERIFICADO ANIMADO ===== */
     .name-container {
       display: flex;
@@ -126,7 +167,7 @@
       justify-content: center;
       gap: 10px;
       flex-wrap: wrap;
-      margin-top: 6px;
+      margin-top: 25px;
     }
 
     .name {
@@ -173,7 +214,7 @@
       text-transform: uppercase;
       opacity: 0.95;
       text-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
-      text-align: center; /* <-- CENTRALIZADO */
+      text-align: center;
       width: 100%;
       display: block;
     }
@@ -199,7 +240,7 @@
       margin: 4px 0 12px;
       padding: 0 4px;
       font-weight: 300;
-      text-align: center; /* <-- CENTRALIZADO PARA COMBINAR */
+      text-align: center;
     }
 
     .bio .destacar {
@@ -231,7 +272,7 @@
       border: 1px solid rgba(212, 175, 55, 0.12);
       border-radius: 60px;
       padding: 10px 18px;
-      margin: 18px 0 16px;
+      margin: 45px 0 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -267,7 +308,7 @@
       font-weight: 800;
     }
 
-    /* ===== BOTÃO VIP PULSANTE ===== */
+    /* ===== BOTÃO VIP - AZUL COM ÍCONE DO TELEGRAM ===== */
     .btn-vip {
       display: flex;
       align-items: center;
@@ -275,37 +316,37 @@
       gap: 14px;
       width: 100%;
       padding: 20px 12px;
-      margin: 12px 0 20px;
-      background: linear-gradient(135deg, #d4af37 0%, #b8860b 50%, #8b6914 100%);
+      margin: 50px 0 20px;
+      background: linear-gradient(135deg, #1a8cff 0%, #0066cc 50%, #004d99 100%);
       background-size: 200% 200%;
       border: none;
       border-radius: 60px;
-      color: #0a0a0a;
-      font-size: 21px;
-      font-weight: 800;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       cursor: pointer;
-      box-shadow: 0 10px 40px rgba(212, 175, 55, 0.4);
+      box-shadow: 0 10px 40px rgba(26, 140, 255, 0.35);
       transition: all 0.3s ease;
       text-decoration: none;
-      border: 1px solid rgba(255, 215, 0, 0.3);
+      border: 1px solid rgba(26, 140, 255, 0.25);
       animation: pulseBtn 2.8s ease-in-out infinite;
       position: relative;
       overflow: hidden;
     }
 
     @keyframes pulseBtn {
-      0% { box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3); transform: scale(1); }
-      50% { box-shadow: 0 15px 55px rgba(212, 175, 55, 0.6); transform: scale(1.02); }
-      100% { box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3); transform: scale(1); }
+      0% { box-shadow: 0 8px 30px rgba(26, 140, 255, 0.3); transform: scale(1); }
+      50% { box-shadow: 0 15px 55px rgba(26, 140, 255, 0.55); transform: scale(1.02); }
+      100% { box-shadow: 0 8px 30px rgba(26, 140, 255, 0.3); transform: scale(1); }
     }
 
     .btn-vip:hover {
       animation: none;
       transform: scale(1.03);
-      box-shadow: 0 15px 60px rgba(212, 175, 55, 0.7);
-      background: linear-gradient(135deg, #e8c84a, #c99f2e, #a77b1a);
+      box-shadow: 0 15px 60px rgba(26, 140, 255, 0.6);
+      background: linear-gradient(135deg, #3399ff, #1a75e6, #0055b3);
     }
 
     .btn-vip:active {
@@ -313,9 +354,9 @@
     }
 
     .btn-vip i {
-      font-size: 24px;
-      color: #1a1a1a;
-      filter: drop-shadow(0 0 6px rgba(0,0,0,0.2));
+      font-size: 26px;
+      color: #ffffff;
+      filter: drop-shadow(0 0 8px rgba(255,255,255,0.15));
     }
 
     /* Brilho no botão */
@@ -326,7 +367,7 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), transparent 60%);
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1), transparent 60%);
       pointer-events: none;
     }
 
@@ -474,7 +515,7 @@
         gap: 10px;
       }
       .btn-vip i {
-        font-size: 20px;
+        font-size: 22px;
       }
       .link-item {
         padding: 13px 16px;
@@ -492,6 +533,16 @@
       .social-footer a {
         font-size: 24px;
       }
+      .online-status {
+        margin-top: 12px;
+      }
+      .online-dot {
+        width: 12px;
+        height: 12px;
+      }
+      .online-text {
+        font-size: 15px;
+      }
     }
 
     @media (max-width: 380px) {
@@ -508,6 +559,13 @@
       .bio {
         font-size: 14px;
       }
+      .online-dot {
+        width: 10px;
+        height: 10px;
+      }
+      .online-text {
+        font-size: 13px;
+      }
     }
   </style>
 </head>
@@ -520,11 +578,17 @@
     <div class="profile-ring">
       <div class="profile-ring-inner">
         <!-- SUBSTITUA O SRC PELA SUA FOTO -->
-        <img src="img/karinapf2.jpeg" />
+        <img src="./img/karinapf3.jpeg" alt="Karina Martins" />
         <!-- CASO QUEIRA USAR INICIAIS, DESCOMENTE ABAIXO E COMENTE A IMG ACIMA -->
         <!-- <div class="profile-placeholder">KM</div> -->
       </div>
     </div>
+  </div>
+
+  <!-- ===== STATUS ONLINE (BOLINHA VERDE PISCANDO) ===== -->
+  <div class="online-status">
+    <span class="online-dot"></span>
+    <span class="online-text">Online</span>
   </div>
 
   <!-- ===== NOME + SELO VERIFICADO ANIMADO ===== -->
@@ -535,33 +599,20 @@
 
   <!-- ===== SUBTÍTULO CENTRALIZADO ===== -->
   <div class="subtitle">
-    <span>CASADA</span> <span>•</span> <span>39 ANINHOS</span>
+    <span>HOTWIFE</span> <span>•</span> <span>39 ANINHOS</span>
   </div>
 
   <div class="divider"></div>
 
-  <!-- ===== BIO PERSUASIVA COM GATILHOS ===== -->
-  <div class="bio">
-    <span class="destacar">🔥 Casada Sofisticada</span> — dona do próprio prazer e da sua atenção.<br />
-    <span class="ouro">✦</span> Conteúdo <span class="destacar">PREMIUM</span> para cavalheiros que valorizam <span class="ouro">maturidade</span> e <span class="ouro">atitude</span>.<br />
-    
-    <span class="linha-impacto">
-      <i class="fas fa-crown"></i> Acesso restrito — apenas para <span class="destacar">verdadeiros apreciadores</span>.
-    </span>
-    <span class="linha-impacto">
-      <i class="fas fa-gem"></i> <span style="color:#fff;">+5.000</span> seguidores confiam na minha <span class="ouro">autenticidade</span>.
-    </span>
-  </div>
-
   <!-- ===== BARRA DE URGÊNCIA (VAGAS LIMITADAS) ===== -->
   <div class="urgency-bar">
-    <span class="label"><i class="fas fa-clock"></i> Vagas Promocionais</span>
-    <span class="vagas">Restam <span>4</span> / 20</span>
+    <span class="label"><i class="fas fa-clock"></i> Tepo médio de resposta:</span>
+    <span class="vagas">3 <span>minutos</span> </span>
   </div>
 
-  <!-- ===== BOTÃO PRINCIPAL VIP ===== -->
+  <!-- ===== BOTÃO PRINCIPAL - AZUL COM ÍCONE DO TELEGRAM ===== -->
   <a href="https://t.me/karinamartins_bot" class="btn-vip" target="_blank" rel="noopener">
-    <i class="fas fa-crown"></i> Acesso VIP <i class="fas fa-bolt"></i>
+    <i class="fab fa-telegram-plane"></i> Toque Aqui para me chamar
   </a>
 
   <!-- ===== FOOTER COM SELO +18 E PRIVACIDADE ===== -->
