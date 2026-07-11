@@ -268,8 +268,7 @@
 
     /* ===== BARRA DE URGÊNCIA / VAGAS ===== */
     .urgency-bar {
-      background: rgba(212, 175, 55, 0.06);
-      border: 1px solid rgba(212, 175, 55, 0.12);
+      
       border-radius: 60px;
       padding: 10px 18px;
       margin: 45px 0 16px;
@@ -310,31 +309,31 @@
 
     /* ===== BOTÃO VIP - AZUL COM ÍCONE DO TELEGRAM ===== */
     .btn-vip {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-      width: 100%;
-      padding: 20px 12px;
-      margin: 50px 0 20px;
-      background: linear-gradient(135deg, #1a8cff 0%, #0066cc 50%, #004d99 100%);
-      background-size: 200% 200%;
-      border: none;
-      border-radius: 60px;
-      color: #ffffff;
-      font-size: 15px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      cursor: pointer;
-      box-shadow: 0 10px 40px rgba(26, 140, 255, 0.35);
-      transition: all 0.3s ease;
-      text-decoration: none;
-      border: 1px solid rgba(26, 140, 255, 0.25);
-      animation: pulseBtn 2.8s ease-in-out infinite;
-      position: relative;
-      overflow: hidden;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 12px;
+  margin: 50px 0 20px;
+  background: linear-gradient(135deg, #1a8cff 0%, #0066cc 50%, #004d99 100%);
+  background-size: 200% 200%;
+  border: none;
+  border-radius: 60px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: 0 10px 40px rgba(26, 140, 255, 0.35);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 1px solid rgba(26, 140, 255, 0.25);
+  animation: pulseBtn 2.8s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
 
     @keyframes pulseBtn {
       0% { box-shadow: 0 8px 30px rgba(26, 140, 255, 0.3); transform: scale(1); }
@@ -567,6 +566,18 @@
         font-size: 13px;
       }
     }
+
+    .btn-vip span {
+    flex: 1;
+    text-align: center;
+    margin-right: 40px; /* mesma largura aproximada do ícone */
+}
+
+.btn-vip i {
+    width: 26px;
+    font-size: 26px;
+    flex-shrink: 0;
+}
   </style>
 </head>
 <body>
@@ -593,8 +604,7 @@
 
   <!-- ===== NOME + SELO VERIFICADO ANIMADO ===== -->
   <div class="name-container">
-    <span class="name">Karina Martins</span>
-    <span class="verified-badge"><i class="fas fa-check-circle"></i></span>
+    <span class="name">Karina Martins ❤️‍🔥</span>
   </div>
 
   <!-- ===== SUBTÍTULO CENTRALIZADO ===== -->
@@ -612,8 +622,9 @@
 
   <!-- ===== BOTÃO PRINCIPAL - AZUL COM ÍCONE DO TELEGRAM ===== -->
   <a href="https://t.me/karinamartins_bot" class="btn-vip" target="_blank" rel="noopener">
-    <i class="fab fa-telegram-plane"></i> Toque Aqui para me chamar
-  </a>
+    <i class="fab fa-telegram-plane"></i>
+    <span>TOQUE AQUI PARA ME CHAMAR</span>
+</a>
 
   <!-- ===== FOOTER COM SELO +18 E PRIVACIDADE ===== -->
   <div class="footer-note">
